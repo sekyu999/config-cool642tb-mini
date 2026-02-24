@@ -77,7 +77,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans    &kp LG(LEFT_ARROW)  &trans  &kp LG(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB3  &kp LC(LS(TAB))     &trans  &kp LC(TAB)          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans              &trans  &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans              &trans  &trans               &kp BACKSLASH
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
             >;
         };
