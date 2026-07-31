@@ -26,6 +26,11 @@
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
+
+        Space {
+            bindings = <&kp SPACE>;
+            key-positions = <38 37>;
+        };
     };
 
     behaviors {
