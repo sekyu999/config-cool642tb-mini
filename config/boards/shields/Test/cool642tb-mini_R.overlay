@@ -1,3 +1,6 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
 #include "cool642tb-mini.dtsi"
 
 &default_transform {
@@ -58,6 +61,28 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         /* automouse-layer = <4>; */
-        scroll-layers = <3 4>;
+        scroll-layers = <3>;
+
+        /* layer 4: APP_SWITCH -- ball down = next app */
+        app_switch {
+            layers = <4>;
+            bindings =
+                <&none>,          /* right */
+                <&none>,          /* left  */
+                <&kp LS(TAB)>,    /* up    */
+                <&kp TAB>;        /* down  */
+            tick = <25>;
+        };
+
+        /* layer 5: VOLUME -- ball up = louder */
+        volume {
+            layers = <5>;
+            bindings =
+                <&none>,              /* right */
+                <&none>,              /* left  */
+                <&kp C_VOLUME_UP>,    /* up    */
+                <&kp C_VOLUME_DOWN>;  /* down  */
+            tick = <25>;
+        };
     };
 };
